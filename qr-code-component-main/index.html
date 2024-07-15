@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:hsl(212, 45%, 89%); /* Optional: for better visualization */
+    }
+
+    .box {
+    display: flex;
+    flex-direction: column; /* Stacks the image and text vertically */
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border: 2px solid #000; /* Optional: border for the box */
+    background-color: #fff; /* Optional: background color for the box */
+    overflow: hidden; /* Ensure the image doesn't overflow the box */
+}
+
+box.img {
+    max-width: calc(100% - 20px); /* Adjust margin as needed */
+    max-height: calc(100% - 20px); /* Adjust margin as needed */
+    object-fit: contain; /* Maintain aspect ratio and fit within the box */
+    margin: 10px; /* Creates a margin around the image inside the box */
+}
+    text.text1{
+      text-transform: capitalize;
+      display: block;
+      color: hsl(218, 44%, 22%);
+    }
+    text.text2{
+      color: hsl(220, 15%, 55%);
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  <div class="box">
+    <!-- <img src = "/Users/thinhtran/Downloads/qr-code-component-main/images/image-qr-code.png"/> -->
+    <p class="paragraph_style">
+      <text class="text1"> Improve your front-end skills by building projects </text>
+      <text class="text2"> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</text>
+    </p>
+  </div>
+
+</body>
+</html>
